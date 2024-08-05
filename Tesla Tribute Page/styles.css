@@ -1,0 +1,99 @@
+/*#f7f7f7*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+header {
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem 0 1rem;
+}
+
+.lead-paragraph {
+    margin-top: 1rem;
+}
+
+#img-div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 1rem;
+    margin: 0 -9rem 0;
+}
+
+img {
+    display: block;
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+main {
+    padding: 0 10rem 0;
+    background-color: #f7f7f7;
+}
+
+main h2 {
+    margin: 1rem 0 1rem;
+}
+
+main h3 {
+    margin: 0.5rem 0 0.5rem;
+    font-weight: 500;
+}
+
+main p {
+    padding-bottom: 1rem;
+    border-bottom: solid 5px grey;
+}
+
+.quotes {
+    padding: 0;
+    border-bottom: solid 5px grey;
+    list-style: none;
+}
+
+.quotes li {
+    margin-bottom: 1rem;
+}
+
+footer {
+    margin: 2rem 0 2rem;
+    padding: 1rem 5rem 1rem;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+#tribute-link {
+    text-decoration: none;
+    color: #141440;
+}
+
+#tribute-link:hover {
+    text-decoration: underline;
+}
+
+#tribute-link:visited {
+    color: grey;
+}
+
+.tribute-link-paragraph {
+    text-align: center;
+    margin: 1rem -3rem 0;
+    border: 0;
+}

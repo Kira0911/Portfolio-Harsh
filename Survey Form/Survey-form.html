@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Key2Fun survey form</title>
+  </head>
+  <body>
+    <h1 id="title">Key2Fun survey form</h1>
+    <p id="description">
+      Thank you for playing with us! please provide the feedback below
+    </p>
+    <form id="survey-form" method="post">
+      <fieldset>
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="user-name"
+          placeholder="Enter your name"
+          required
+        />
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="user-email"
+          id="email"
+          placeholder="Enter your Email"
+          required
+        />
+
+        <label for="age">Age</label>
+        <input
+          type="number"
+          name="user-age"
+          id="age"
+          min="8"
+          max="120"
+          placeholder="Age"
+          required
+        />
+
+        <label for="gender-options">What is your gender?</label>
+        <select id="gender-options" name="user-gender">
+          <option value="">Select gender</option>
+          <option value="male" selected>Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Would you recommend Key2Fun to a friend?</legend>
+        <label for="definetly"
+          ><input
+            type="radio"
+            required
+            name="recommendation"
+            id="definetly"
+            class="inline"
+          />
+          Definetly
+        </label>
+        <label for="maybe"
+          ><input
+            type="radio"
+            name="recommendation"
+            id="maybe"
+            class="inline"
+          />
+          Maybe
+        </label>
+        <label for="not-sure"
+          ><input
+            type="radio"
+            name="recommendation"
+            id="not-sure"
+            class="inline"
+          />
+          Not sure
+        </label>
+      </fieldset>
+      <fieldset>
+        <p id="improvement-checkbox-label">
+          What would you like to see improved?
+        </p>
+        <label for="products"
+          ><input
+            type="checkbox"
+            name="improvement-group"
+            id="products"
+            value="products"
+            class="inline"
+          />Products</label
+        >
+        <label for="services"
+          ><input
+            type="checkbox"
+            name="improvement-group"
+            id="services"
+            value="services"
+            class="inline"
+          />Services</label
+        >
+      </fieldset>
+      <fieldset>
+        <label for="suggestions">Any comments or suggestions ?</label>
+        <textarea
+          name="suggestions"
+          id="suggestions"
+          rows="6"
+          placeholder="Enter your comments and suggestions here..."
+        ></textarea>
+      </fieldset>
+      <input type="submit" value="Submit" class="submit-button" />
+    </form>
+  </body>
+</html>
